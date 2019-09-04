@@ -1,0 +1,48 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+
+# Not supported
+namePrefix: test-
+
+
+resources:
+- Rollout.yaml
+- Service.yaml #supported
+
+# patchesStrategicMerge:
+transformers:
+- Rollout-patch.yaml
+
+
+configurations:
+- rollout-transform.yaml
+
+configMapGenerator:
+- name: guestbook-cm
+  literals:
+  - FOO=BAR
+
+secretGenerator:
+- name: guestbook-secret
+  literals:
+  - password=Pa55w0rd
+
+commonLabels:
+  foo: bar
+
+commonAnnotations:
+  foo: bar
+
+vars:
+- name: SERVICE_NAME
+  objref:
+    kind: Service
+    name: guestbook-svc
+    apiVersion: v1
+  fieldref:
+    fieldpath: metadata.name
+
+images:
+- name: gcr.io/heptio-images/ks-guestbook-demo
+  newTag: '0.2'

@@ -1,0 +1,74 @@
+module github.com/argoproj/argo-rollouts
+
+go 1.12
+
+require (
+	cloud.google.com/go v0.33.1
+	github.com/PuerkitoBio/purell v1.1.0
+	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+	github.com/bouk/monkey v1.0.0
+	github.com/davecgh/go-spew v1.1.1
+	github.com/docker/distribution v0.0.0-20181127234825-aa985ba8897a
+	github.com/emicklei/go-restful v2.8.0+incompatible
+	github.com/evanphx/json-patch v4.2.0+incompatible
+	github.com/ghodss/yaml v1.0.0
+	github.com/go-openapi/jsonpointer v0.18.0
+	github.com/go-openapi/jsonreference v0.18.0
+	github.com/go-openapi/spec v0.18.0
+	github.com/go-openapi/swag v0.18.0
+	github.com/gogo/protobuf v1.1.1
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+	github.com/golang/groupcache v0.0.0-20181024230925-c65c006176ff
+	github.com/golang/protobuf v1.2.0
+	github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf
+	github.com/google/uuid v1.1.0
+	github.com/googleapis/gnostic v0.2.0
+	github.com/hashicorp/golang-lru v0.5.0
+	github.com/imdario/mergo v0.3.6
+	github.com/inconshreveable/mousetrap v1.0.0
+	github.com/json-iterator/go v1.1.5
+	github.com/konsorten/go-windows-terminal-sequences v1.0.1
+	github.com/mailru/easyjson v0.0.0-20180823135443-60711f1a8329
+	github.com/matttproud/golang_protobuf_extensions v1.0.1
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+	github.com/modern-go/reflect2 v1.0.1
+	github.com/opencontainers/go-digest v1.0.0-rc1
+	github.com/pborman/uuid v0.0.0-20180906182336-adf5a7427709
+	github.com/pkg/errors v0.8.1
+	github.com/pmezard/go-difflib v1.0.0
+	github.com/prometheus/client_golang v0.9.2
+	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
+	github.com/prometheus/common v0.2.0
+	github.com/prometheus/procfs v0.0.0-20190322151404-55ae3d9d5573
+	github.com/sirupsen/logrus v1.3.0
+	github.com/spf13/cobra v0.0.3
+	github.com/spf13/pflag v1.0.3
+	github.com/stretchr/testify v1.3.0
+	golang.org/x/crypto v0.0.0-20181112202954-3d3f9f413869
+	golang.org/x/net v0.0.0-20190206173232-65e2d4e15006
+	golang.org/x/oauth2 v0.0.0-20181106182150-f42d05182288
+	golang.org/x/sys v0.0.0-20190312061237-fead79001313
+	golang.org/x/text v0.3.1-0.20181227161524-e6919f6577db
+	golang.org/x/time v0.0.0-20181108054448-85acf8d2951c
+	golang.org/x/tools v0.0.0-20181117154741-2ddaf7f79a09
+	google.golang.org/appengine v1.3.0
+	gopkg.in/inf.v0 v0.9.1
+	gopkg.in/square/go-jose.v2 v2.1.9
+	gopkg.in/yaml.v2 v2.2.1
+	k8s.io/api v0.0.0-20190531132109-d3f5f50bdd94
+	k8s.io/apiextensions-apiserver v0.0.0-20190315093550-53c4693659ed
+	k8s.io/apimachinery v0.0.0-20190612125636-6a5db36e93ad
+	k8s.io/apiserver v0.0.0-20190531031430-24fd0f18bc21
+	k8s.io/client-go v0.0.0-20190521191137-11646d1007e0
+	k8s.io/cloud-provider v0.0.0-20190314002645-c892ea32361a
+	k8s.io/cluster-bootstrap v0.0.0-20190531140748-ffdb6fd27ea4
+	k8s.io/code-generator v0.0.0-20190311093542-50b561225d70
+	k8s.io/component-base v0.0.0-20190612130303-4062e14deebe
+	k8s.io/gengo v0.0.0-20181113154421-fd15ee9cc2f7
+	k8s.io/klog v0.3.2
+	k8s.io/kube-openapi v0.0.0-20190228160746-b3a7cee44a30
+	k8s.io/kubernetes v0.0.0-20190612162019-d1c99590f455
+	k8s.io/utils v0.0.0-20190607212802-c55fbcfc754a
+	sigs.k8s.io/yaml v1.1.0
+)
